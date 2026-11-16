@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sözim-ді қолдау · Поддержать Sözim</title>
+<meta name="description" content="Sözim — қазақ және орыс тілдерінің пернетақтасы. Жобаны қолдау · Поддержать проект.">
+<style>
+  :root{
+    --bg:#ffffff; --fg:#16181d; --muted:#5c6370;
+    --line:#e4e7ec; --accent:#00786f; --soft:#f6f8f9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14161a; --fg:#e9ecf1; --muted:#9aa3b0;
+           --line:#272b32; --accent:#4fd1c5; --soft:#1b1e24; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);padding:22px 0}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{font-size:20px;font-weight:700;letter-spacing:-.01em}
+  .brand span{color:var(--accent)}
+  .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--soft)}
+  .lang button{border:0;background:transparent;color:var(--muted);font:600 13px/1 inherit;padding:8px 14px;border-radius:999px;cursor:pointer}
+  .lang button.on{background:var(--accent);color:#fff}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.02em;margin:40px 0 14px}
+  h2{font-size:21px;margin:40px 0 12px;letter-spacing:-.01em}
+  p{margin:0 0 14px}
+  .lead{font-size:18px;color:var(--muted);margin-bottom:24px}
+  ul{margin:0 0 14px;padding-left:22px}
+  li{margin:4px 0}
+  .card{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0}
+  .card h3{margin:0 0 8px;font-size:17px}
+  .qr{display:block;width:100%;max-width:280px;height:auto;margin:8px auto 4px;border-radius:12px;background:#fff;padding:8px}
+  .center{text-align:center;color:var(--muted);font-size:14px}
+  dl{margin:0}
+  dt{color:var(--muted);font-size:14px;margin-top:12px}
+  dd{margin:2px 0 0;font-variant-numeric:tabular-nums;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .iban{word-break:break-all}
+  .copy{border:1px solid var(--line);background:var(--bg);color:var(--accent);border-radius:8px;font:600 12px/1 inherit;padding:6px 10px;cursor:pointer}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border-radius:10px;padding:12px 18px;margin:4px 8px 4px 0}
+  a{color:var(--accent)}
+  footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0 48px;color:var(--muted);font-size:14px}
+  [data-l]{display:none}
+  html[lang="kk"] [data-l="kk"], html[lang="ru"] [data-l="ru"]{display:revert}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap top">
+    <div class="brand">Sözim<span> · KitonikGroup</span></div>
+    <div class="lang" role="group" aria-label="Тіл · Язык">
+      <button type="button" id="b-kk" onclick="setLang('kk')">ҚАЗ</button>
+      <button type="button" id="b-ru" onclick="setLang('ru')">РУС</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ═════════ ҚАЗАҚША ═════════ -->
+<div data-l="kk">
+  <h1>Sözim-ді қолдау</h1>
+  <p class="lead">Sözim — қазақ және орыс тілдеріне арналған пернетақта. Біз — Алматыдағы шағын команда, «KitonikGroup» ЖШС. iPhone-ға арналған пернетақта тегін және тегін болып қала береді.</p>
+
+  <h2>Не жасалды</h2>
+  <ul>
+    <li>2026 жылғы 8 қарашада App Store-да шықты, кейін 1.0.1 жаңартуы жарияланды.</li>
+    <li>Android нұсқасы сынақта — жақында Google Play-де шығады.</li>
+    <li>Пернетақта қазақша және орысша қателерді түзетеді, келесі сөзді ұсынады.</li>
+  </ul>
+
+  <h2>Қаражат неге жұмсалады</h2>
+  <ul>
+    <li>Қазақ сөздігін толықтыру және түзетуді жақсарту</li>
+    <li>Android нұсқасы</li>
+    <li>Сервер</li>
+    <li>Mac және Windows нұсқалары</li>
+  </ul>
+
+  <h2>Қалай қолдауға болады</h2>
+  <div class="card">
+    <h3>Kaspi арқылы</h3>
+    <img class="qr" src="kaspi-qr.png" alt="Kaspi QR — KitonikGroup">
+    <p class="center">Kaspi қосымшасында QR кодты сканерлеңіз</p>
+  </div>
+  <div class="card">
+    <h3>Деректемелер бойынша аударым</h3>
+    <dl>
+      <dt>Компания</dt><dd>«KITONIKGROUP» ЖШС</dd>
+      <dt>БСН</dt><dd><span>180240037050</span><button class="copy" data-c="180240037050">Көшіру</button></dd>
+      <dt>Банк</dt><dd>«Kaspi Bank» АҚ</dd>
+      <dt>БСК</dt><dd>CASPKZKA</dd>
+      <dt>Шот нөмірі (IBAN)</dt><dd><span class="iban">KZ80722S000008896891</span><button class="copy" data-c="KZ80722S000008896891">Көшіру</button></dd>
+      <dt>Кбе</dt><dd>17</dd>
+      <dt>Мекенжай</dt><dd>Алматы қ., Бостандық ауданы, Абай даңғылы, 58А</dd>
+    </dl>
+  </div>
+  <p>Аударым «KitonikGroup» ЖШС шотына түседі және Sözim-ді дамытуға жұмсалады. Шығындар туралы есепті тоқсан сайын осы бетте жариялаймыз.</p>
+
+  <h2>Компанияларға</h2>
+  <p>Компания ретінде қолдағыңыз келсе, серіктестіктің үш түрі бар: «Платформа серіктесі», «Сөздік серіктесі» және «Жоба досы». Жазыңыз: <a href="mailto:KitonikGroup@gmail.com">KitonikGroup@gmail.com</a></p>
+
+  <h2>Ең үлкен көмек</h2>
+  <p>Sözim туралы досыңызға айтыңыз және App Store-да баға қойыңыз ❤️</p>
+  <p>
+    <a class="btn" href="https://apps.apple.com/app/id6793591152?action=write-review">App Store-да баға қою</a>
+    <a class="btn" href="https://www.threads.net/@sozim_keyboard">Threads: @sozim_keyboard</a>
+  </p>
+</div>
+
+<!-- ═════════ ПО-РУССКИ ═════════ -->
+<div data-l="ru">
+  <h1>Поддержать Sözim</h1>
+  <p class="lead">Sözim — клавиатура для казахского и русского языков. Мы — небольшая команда из Алматы, ТОО «KitonikGroup». Клавиатура для iPhone бесплатна и останется бесплатной.</p>
+
+  <h2>Что уже сделано</h2>
+  <ul>
+    <li>8 ноября 2026 года вышла в App Store, затем вышло обновление 1.0.1.</li>
+    <li>Версия для Android на тестировании — скоро в Google Play.</li>
+    <li>Клавиатура исправляет ошибки на казахском и русском и подсказывает следующее слово.</li>
+  </ul>
+
+  <h2>На что пойдут деньги</h2>
+  <ul>
+    <li>Пополнение казахского словаря и улучшение исправлений</li>
+    <li>Версия для Android</li>
+    <li>Сервер</li>
+    <li>Версии для Mac и Windows</li>
+  </ul>
+
+  <h2>Как поддержать</h2>
+  <div class="card">
+    <h3>Через Kaspi</h3>
+    <img class="qr" src="kaspi-qr.png" alt="Kaspi QR — KitonikGroup">
+    <p class="center">Отсканируйте QR-код в приложении Kaspi</p>
+  </div>
+  <div class="card">
+    <h3>Перевод по реквизитам</h3>
+    <dl>
+      <dt>Компания</dt><dd>ТОО «KITONIKGROUP»</dd>
+      <dt>БИН</dt><dd><span>180240037050</span><button class="copy" data-c="180240037050">Копировать</button></dd>
+      <dt>Банк</dt><dd>АО «Kaspi Bank»</dd>
+      <dt>БИК</dt><dd>CASPKZKA</dd>
+      <dt>Номер счёта (IBAN)</dt><dd><span class="iban">KZ80722S000008896891</span><button class="copy" data-c="KZ80722S000008896891">Копировать</button></dd>
+      <dt>КБе</dt><dd>17</dd>
+      <dt>Адрес</dt><dd>г. Алматы, Бостандыкский район, пр. Абая, 58А</dd>
+    </dl>
+  </div>
+  <p>Перевод поступает на счёт ТОО «KitonikGroup» и идёт на развитие Sözim. Отчёт о тратах публикуем на этой странице раз в квартал.</p>
+
+  <h2>Для компаний</h2>
+  <p>Если вы хотите поддержать проект как компания, есть три формата партнёрства: «Партнёр платформы», «Партнёр словаря» и «Друг проекта». Напишите нам: <a href="mailto:KitonikGroup@gmail.com">KitonikGroup@gmail.com</a></p>
+
+  <h2>Самая большая помощь</h2>
+  <p>Расскажите о Sözim друзьям и поставьте оценку в App Store ❤️</p>
+  <p>
+    <a class="btn" href="https://apps.apple.com/app/id6793591152?action=write-review">Оценить в App Store</a>
+    <a class="btn" href="https://www.threads.net/@sozim_keyboard">Threads: @sozim_keyboard</a>
+  </p>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 KitonikGroup · <a href="/">kitonik.kz</a></div>
+</footer>
+
+<script>
+  function setLang(l){
+    document.documentElement.lang = l;
+    document.getElementById('b-kk').className = l === 'kk' ? 'on' : '';
+    document.getElementById('b-ru').className = l === 'ru' ? 'on' : '';
+    try { localStorage.setItem('sozim.lang', l); } catch (e) {}
+  }
+  (function(){
+    var q = (location.search.match(/[?&]lang=(kk|ru)/) || [])[1];
+    var s = null; try { s = localStorage.getItem('sozim.lang'); } catch (e) {}
+    setLang(q || s || 'kk');
+  })();
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click', function(){
+      var t = b.textContent;
+      (navigator.clipboard ? navigator.clipboard.writeText(b.dataset.c) : Promise.reject()).then(function(){
+        b.textContent = document.documentElement.lang === 'kk' ? 'Көшірілді ✓' : 'Скопировано ✓';
+        setTimeout(function(){ b.textContent = t; }, 1500);
+      }, function(){});
+    });
+  });
+</script>
+</body>
+</html>
