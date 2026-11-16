@@ -1,148 +1,210 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk" data-def="kk" data-t-kk="Sözim — iPhone-ға арналған қазақша пернетақта | KitonikGroup" data-t-ru="Sözim — казахская клавиатура для iPhone | KitonikGroup" data-t-en="Sözim — Kazakh keyboard for iPhone | KitonikGroup" data-d-kk="Sözim — қазақ және орыс тілдеріне арналған пернетақта: қателерді өзі түзетеді, қазақ әріптері бір басумен. Тегін. App Store-да." data-d-ru="Sözim — клавиатура для казахского и русского языков: сама исправляет ошибки, казахские буквы в одно нажатие. Бесплатно. В App Store." data-d-en="Sözim — a keyboard for Kazakh and Russian: fixes typos, every Kazakh letter in one tap. Free on the App Store.">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KitonikGroup — языковые технологии для казахского языка, Алматы</title>
-<meta name="description" content="ТОО «KitonikGroup» — разработка программного обеспечения в Алматы. Языковые технологии для казахского и русского языков.">
-<style>
-  :root{
-    --bg:#ffffff; --fg:#16181d; --muted:#5c6370;
-    --line:#e4e7ec; --accent:#00786f; --soft:#f6f8f9;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#14161a; --fg:#e9ecf1; --muted:#9aa3b0;
-           --line:#272b32; --accent:#4fd1c5; --soft:#1b1e24; }
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0; background:var(--bg); color:var(--fg);
-    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-  header{border-bottom:1px solid var(--line);padding:28px 0}
-  .brand{font-size:20px;font-weight:700;letter-spacing:-.01em}
-  .brand span{color:var(--accent)}
-  nav{margin-top:10px;font-size:15px}
-  nav a{color:var(--muted);text-decoration:none;margin-right:18px}
-  nav a:hover{color:var(--accent)}
-  h1{font-size:32px;line-height:1.25;letter-spacing:-.02em;margin:44px 0 14px}
-  h2{font-size:21px;margin:44px 0 12px;letter-spacing:-.01em}
-  p{margin:0 0 14px;color:var(--fg)}
-  .lead{font-size:18px;color:var(--muted);margin-bottom:28px}
-  section{padding-bottom:8px}
-  .card{
-    background:var(--soft);border:1px solid var(--line);
-    border-radius:12px;padding:20px;margin:16px 0;
-  }
-  .card h3{margin:0 0 8px;font-size:17px}
-  .card p{margin:0;color:var(--muted)}
-  dl{margin:0}
-  dt{color:var(--muted);font-size:14px;margin-top:14px}
-  dd{margin:2px 0 0;font-variant-numeric:tabular-nums}
-  a{color:var(--accent)}
-  footer{
-    border-top:1px solid var(--line);margin-top:56px;
-    padding:24px 0 48px;color:var(--muted);font-size:14px;
-  }
-  .row{display:flex;gap:16px;flex-wrap:wrap}
-  .row>div{flex:1 1 240px}
-</style>
+<title>Sözim — iPhone-ға арналған қазақша пернетақта | KitonikGroup</title>
+<meta name="description" content="Sözim — қазақ және орыс тілдеріне арналған пернетақта: қателерді өзі түзетеді, қазақ әріптері бір басумен. Тегін. App Store-да.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Sözim — iPhone-ға арналған қазақша пернетақта | KitonikGroup">
+<meta property="og:description" content="Sözim — қазақ және орыс тілдеріне арналған пернетақта: қателерді өзі түзетеді, қазақ әріптері бір басумен. Тегін. App Store-да.">
+<meta property="og:image" content="https://kitonik.kz/assets/icon.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <div class="brand">Kitonik<span>Group</span></div>
-    <nav>
-      <a href="#about">О компании</a>
-      <a href="#products">Продукты</a>
-      <a href="#contacts">Контакты</a>
-      <a href="/privacy.html">Конфиденциальность</a>
-      <a href="/support.html">Поддержка</a>
-    </nav>
+<header class="site">
+  <div class="wrap top">
+    <a class="brand" href="index.html"><img src="assets/icon-96.png" width="36" height="36" alt=""><div>Sözim<span> · KitonikGroup</span></div></a>
+    <div class="lang" role="group" aria-label="Тіл · Язык · Language">
+      <button type="button" data-lang="kk">ҚАЗ</button>
+      <button type="button" data-lang="ru">РУС</button>
+      <button type="button" data-lang="en">ENG</button>
+    </div>
+    <nav class="main" aria-label="Menu"><a href="index.html#how"><span data-l="kk">Қалай жұмыс істейді</span><span data-l="ru">Как это работает</span><span data-l="en">How it works</span></a><a href="index.html#features"><span data-l="kk">Мүмкіндіктер</span><span data-l="ru">Возможности</span><span data-l="en">Features</span></a><a href="index.html#company"><span data-l="kk">Компания</span><span data-l="ru">Компания</span><span data-l="en">Company</span></a><a href="qoldau/" class="pill"><span data-l="kk">Қолдау</span><span data-l="ru">Поддержать</span><span data-l="en">Support us</span></a></nav>
   </div>
 </header>
 
+<!-- ═════ HERO ═════ -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><span data-l="kk">iPhone үшін · тегін</span><span data-l="ru">Для iPhone · бесплатно</span><span data-l="en">For iPhone · free</span></span>
+      <h1 data-l="kk">Ана тіліңде жаз</h1><h1 data-l="ru">Пиши на родном языке</h1><h1 data-l="en">Write in your own language</h1>
+      <p class="lead" data-l="kk">Sözim — қазақ және орыс тілдеріне арналған пернетақта. Қателерді өзі түзетеді, келесі сөзді ұсынады, ал қазақ әріптерінің бәрі бір басумен қолжетімді.</p><p class="lead" data-l="ru">Sözim — клавиатура для казахского и русского языков. Исправляет ошибки, подсказывает следующее слово, а все казахские буквы — в одно нажатие.</p><p class="lead" data-l="en">Sözim is a keyboard for Kazakh and Russian. It fixes typos, suggests the next word, and puts every Kazakh letter one tap away.</p>
+      <p>
+        <a class="btn" href="https://apps.apple.com/app/id6793591152"><span data-l="kk">App Store-дан жүктеу</span><span data-l="ru">Скачать в App Store</span><span data-l="en">Get it on the App Store</span></a>
+        <a class="btn ghost" href="qoldau/"><span data-l="kk">Sözim-ді қолдау</span><span data-l="ru">Поддержать Sözim</span><span data-l="en">Support Sözim</span></a>
+      </p>
+      <ul class="chips">
+        <li><span data-l="kk">2026 жылғы 8 қарашада App Store-да шықты</span><span data-l="ru">Вышла в App Store 8 ноября 2026</span><span data-l="en">Released on the App Store on 8 Nov 2026</span></li>
+        <li><span data-l="kk">1.0.1 жаңартуы шықты</span><span data-l="ru">Вышло обновление 1.0.1</span><span data-l="en">Update 1.0.1 is out</span></li>
+        <li><span data-l="kk">Android — сынақта, жақында Google Play-де</span><span data-l="ru">Android на тестировании — скоро в Google Play</span><span data-l="en">Android in testing — coming soon to Google Play</span></li>
+      </ul>
+    </div>
+    <div>
+      <img class="phone" src="assets/01-autocorrect.webp" srcset="assets/01-autocorrect.webp 420w, assets/01-autocorrect@2x.webp 840w" sizes="310px" width="420" height="910" decoding="async" alt="Sözim «Салем» сөзін «Сәлем» деп түзетеді" data-a-kk="Sözim «Салем» сөзін «Сәлем» деп түзетеді" data-a-ru="Sözim исправляет «Салем» на «Сәлем»" data-a-en="Sözim corrects “Салем” to “Сәлем”">
+    </div>
+  </div>
+</div>
+
 <main class="wrap">
 
-  <h1>Языковые технологии для казахского языка</h1>
-  <p class="lead">
-    ТОО «KitonikGroup» — компания по разработке программного обеспечения из Алматы.
-    Мы делаем инструменты ввода и обработки текста для казахского и русского языков.
-  </p>
+<!-- ═════ ЗАЧЕМ ═════ -->
+<section id="why">
+  <h2 data-l="kk">Қазақша жазу оңай болуы керек</h2><h2 data-l="ru">Писать по-казахски должно быть легко</h2><h2 data-l="en">Typing Kazakh should be easy</h2>
+  <p class="sec-lead" data-l="kk">Қазақ әліпбиінде тоғыз ерекше әріп бар (ә, і, ң, ғ, ү, ұ, қ, ө, һ), ал күнделікті жазбада қазақша мен орысша сөздер араласып жүреді. Sözim осыны ескереді: бір пернетақтада екі тіл, ал ерекше әріптерді іздеудің қажеті жоқ — «Салем» деп жазсаңыз, пернетақта «Сәлем» деп түзетеді.</p><p class="sec-lead" data-l="ru">В казахском алфавите девять особых букв (ә, і, ң, ғ, ү, ұ, қ, ө, һ), а в обычной переписке казахские и русские слова идут вперемешку. Sözim это учитывает: два языка на одной клавиатуре, а особые буквы не нужно искать — напишите «Салем», и клавиатура исправит на «Сәлем».</p><p class="sec-lead" data-l="en">The Kazakh alphabet has nine special letters (ә, і, ң, ғ, ү, ұ, қ, ө, һ), and everyday messages mix Kazakh and Russian words. Sözim is built for exactly that: two languages on one keyboard, and no hunting for special letters — type “Салем” and it corrects to “Сәлем”.</p>
+</section>
 
-  <section id="about">
-    <h2>О компании</h2>
+<!-- ═════ КАК ЭТО РАБОТАЕТ ═════ -->
+<section id="how">
+  <h2 data-l="kk">Қалай жұмыс істейді</h2><h2 data-l="ru">Как это работает</h2><h2 data-l="en">How it works</h2>
+  <ol class="steps">
+    <li>
+      <h3 data-l="kk">Орнатыңыз</h3><h3 data-l="ru">Установите</h3><h3 data-l="en">Install</h3>
+      <p data-l="kk">App Store-дан Sözim-ді жүктеңіз. Пернетақта тегін.</p><p data-l="ru">Скачайте Sözim в App Store. Клавиатура бесплатна.</p><p data-l="en">Get Sözim from the App Store. The keyboard is free.</p>
+    </li>
+    <li>
+      <h3 data-l="kk">Қосыңыз</h3><h3 data-l="ru">Добавьте клавиатуру</h3><h3 data-l="en">Add the keyboard</h3>
+      <p data-l="kk">iPhone баптауларында: Settings → General → Keyboard → Keyboards → Add New Keyboard → Sözim.</p><p data-l="ru">В настройках iPhone: Настройки → Основные → Клавиатура → Клавиатуры → Новые клавиатуры → Sözim.</p><p data-l="en">In iPhone Settings: General → Keyboard → Keyboards → Add New Keyboard → Sözim.</p>
+    </li>
+    <li>
+      <h3 data-l="kk">Жазыңыз</h3><h3 data-l="ru">Пишите</h3><h3 data-l="en">Start typing</h3>
+      <p data-l="kk">Кез келген қолданбада 🌐 пернесін басып, Sözim-ді таңдаңыз да, қазақша не орысша жаза беріңіз.</p><p data-l="ru">В любом приложении нажмите 🌐, выберите Sözim — и пишите на казахском или русском.</p><p data-l="en">In any app, tap 🌐, choose Sözim, and write in Kazakh or Russian.</p>
+    </li>
+  </ol>
+  <p class="note" data-l="kk">«Толық қолжетімділік» (Full Access) міндетті емес: ол тек түймелердің дыбысы мен дірілі үшін керек.</p><p class="note" data-l="ru">«Полный доступ» (Full Access) необязателен: он нужен только для звука нажатий и вибрации.</p><p class="note" data-l="en">Full Access is optional: it is used only for key sounds and vibration.</p>
+</section>
+
+<!-- ═════ ВОЗМОЖНОСТИ ═════ -->
+<section id="features">
+  <h2 data-l="kk">Мүмкіндіктер</h2><h2 data-l="ru">Возможности</h2><h2 data-l="en">Features</h2>
+  <div class="feat">
+    <article class="fcard">
+      <img src="assets/02-two-langs.webp" srcset="assets/02-two-langs.webp 420w, assets/02-two-langs@2x.webp 840w" sizes="(max-width:640px) 280px, 320px" width="420" height="910" loading="lazy" decoding="async" alt="Екі тілді пернетақта: қазақша және орысша мәтін" data-a-kk="Екі тілді пернетақта: қазақша және орысша мәтін" data-a-ru="Клавиатура с двумя языками: казахский и русский текст" data-a-en="Keyboard with two languages: Kazakh and Russian text">
+      <h3 data-l="kk">Бір пернетақтада екі тіл</h3><h3 data-l="ru">Два языка на одной клавиатуре</h3><h3 data-l="en">Two languages, one keyboard</h3>
+      <p data-l="kk">Қазақ және орыс тілдері бір пернетақтада. Қазақша мен орысша сөздер араласқан хат — қиындықсыз.</p><p data-l="ru">Казахский и русский — на одной клавиатуре. Сообщения, где казахские и русские слова идут вперемешку, больше не проблема.</p><p data-l="en">Kazakh and Russian live on one keyboard. Messages that mix both languages are no longer a hassle.</p>
+    </article>
+    <article class="fcard">
+      <img src="assets/03-kaz-row.webp" srcset="assets/03-kaz-row.webp 420w, assets/03-kaz-row@2x.webp 840w" sizes="(max-width:640px) 280px, 320px" width="420" height="910" loading="lazy" decoding="async" alt="Қазақ әріптерінің қатары" data-a-kk="Қазақ әріптерінің қатары" data-a-ru="Ряд казахских букв" data-a-en="Row of Kazakh letters">
+      <h3 data-l="kk">Қазақ әріптері — бір басумен</h3><h3 data-l="ru">Казахские буквы — одним нажатием</h3><h3 data-l="en">Kazakh letters in one tap</h3>
+      <p data-l="kk">Ә, І, Ң, Ғ, Ү, Ұ, Қ, Ө, Һ — тоғыз әріптің бәрі қолыңызда. Іздеп, басып ұстап әуре болмайсыз.</p><p data-l="ru">Ә, І, Ң, Ғ, Ү, Ұ, Қ, Ө, Һ — все девять казахских букв под рукой. Не нужно искать их и удерживать клавиши.</p><p data-l="en">Ә, І, Ң, Ғ, Ү, Ұ, Қ, Ө, Һ — all nine Kazakh letters are right there. No searching, no long-presses.</p>
+    </article>
+    <article class="fcard">
+      <img src="assets/04-clipboard.webp" srcset="assets/04-clipboard.webp 420w, assets/04-clipboard@2x.webp 840w" sizes="(max-width:640px) 280px, 320px" width="420" height="910" loading="lazy" decoding="async" alt="Алмасу буфері: сақталған жазбалар" data-a-kk="Алмасу буфері: сақталған жазбалар" data-a-ru="Буфер обмена: сохранённые заметки" data-a-en="Clipboard with saved notes">
+      <h3 data-l="kk">Алмасу буфері қол астында</h3><h3 data-l="ru">Буфер обмена — всегда под рукой</h3><h3 data-l="en">Clipboard always at hand</h3>
+      <p data-l="kk">Жиі керек мәтіндерді — деректемелерді, сәлемдесуді, шаблондарды — сақтап қойыңыз да, бір түртумен енгізіңіз.</p><p data-l="ru">Сохраняйте нужные тексты — реквизиты, приветствия, заготовки — и вставляйте одним касанием.</p><p data-l="en">Save the texts you reuse — bank details, greetings, templates — and paste them with one tap.</p>
+    </article>
+    <article class="fcard">
+      <img src="assets/05-delete.webp" srcset="assets/05-delete.webp 420w, assets/05-delete@2x.webp 840w" sizes="(max-width:640px) 280px, 320px" width="420" height="910" loading="lazy" decoding="async" alt="Сөзді тұтас өшіру" data-a-kk="Сөзді тұтас өшіру" data-a-ru="Удаление слова целиком" data-a-en="Deleting a whole word">
+      <h3 data-l="kk">Сөздерді тұтас өшіру</h3><h3 data-l="ru">Удаление целых слов</h3><h3 data-l="en">Delete whole words</h3>
+      <p data-l="kk">Әріпті бір-бірлеп емес, сөзді бірден өшіріңіз — қате жазылған жолды түзету тез.</p><p data-l="ru">Удаляйте сразу слово, а не по одной букве — исправлять опечатки быстрее.</p><p data-l="en">Remove a whole word at once instead of one letter at a time — fixing typos is faster.</p>
+    </article>
+    <article class="fcard">
+      <img src="assets/06-themes.webp" srcset="assets/06-themes.webp 420w, assets/06-themes@2x.webp 840w" sizes="(max-width:640px) 280px, 320px" width="420" height="910" loading="lazy" decoding="async" alt="Пернетақта тақырыптары" data-a-kk="Пернетақта тақырыптары" data-a-ru="Темы клавиатуры" data-a-en="Keyboard themes">
+      <h3 data-l="kk">Өз стиліңді таңда</h3><h3 data-l="ru">Выберите свой стиль</h3><h3 data-l="en">Pick your style</h3>
+      <p data-l="kk">Пернетақтаның түр-түсін өзіңіз таңдаңыз: ашық және қою тақырыптар.</p><p data-l="ru">Выберите цвет и вид клавиатуры: есть светлые и тёмные темы.</p><p data-l="en">Choose how your keyboard looks: there are light and dark themes.</p>
+    </article>
+    <article class="fcard priv">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <h3 data-l="kk">Мәтініңіз телефоныңызда қалады</h3><h3 data-l="ru">Ваш текст остаётся на телефоне</h3><h3 data-l="en">Your text stays on your phone</h3>
+      <p data-l="kk">Сіз жазғанның бәрі тек телефоныңызда өңделеді. Біз бұл деректерді алмаймыз, сақтамаймыз және ешкімге бермейміз. Тіркелу керек емес.</p><p data-l="ru">Всё, что вы набираете, обрабатывается только на вашем телефоне. Мы не получаем эти данные, не храним их и не передаём никому. Регистрация не нужна.</p><p data-l="en">Everything you type is processed only on your phone. We don’t receive it, store it or share it with anyone. No sign-up needed.</p>
+      <p><a href="privacy.html"><span data-l="kk">Құпиялылық саясаты →</span><span data-l="ru">Политика конфиденциальности →</span><span data-l="en">Privacy policy →</span></a></p>
+    </article>
+  </div>
+</section>
+
+<!-- ═════ FAQ ═════ -->
+<section id="faq">
+  <h2 data-l="kk">Жиі қойылатын сұрақтар</h2><h2 data-l="ru">Частые вопросы</h2><h2 data-l="en">FAQ</h2>
+  <details>
+    <summary><span data-l="kk">Sözim тегін бе?</span><span data-l="ru">Sözim бесплатна?</span><span data-l="en">Is Sözim free?</span></summary>
+    <p data-l="kk">Иә. iPhone-ға арналған пернетақта тегін және тегін болып қала береді.</p><p data-l="ru">Да. Клавиатура для iPhone бесплатна и останется бесплатной.</p><p data-l="en">Yes. The iPhone keyboard is free and will stay free.</p>
+  </details>
+  <details>
+    <summary><span data-l="kk">Менің мәтінім қайда кетеді?</span><span data-l="ru">Куда уходит мой текст?</span><span data-l="en">Where does my text go?</span></summary>
+    <p data-l="kk">Ешқайда: сіз жазғанның бәрі тек телефоныңызда өңделеді, біз бұл деректерді алмаймыз. Толығырақ — құпиялылық саясатында.</p><p data-l="ru">Никуда: всё, что вы набираете, обрабатывается только на телефоне, мы не получаем эти данные. Подробности — в политике конфиденциальности.</p><p data-l="en">Nowhere: everything you type is processed only on your phone, and we don’t receive it. Details are in the privacy policy.</p>
+  </details>
+  <details>
+    <summary><span data-l="kk">«Толық қолжетімділік» (Full Access) керек пе?</span><span data-l="ru">Нужен ли «Полный доступ» (Full Access)?</span><span data-l="en">Do I need to allow Full Access?</span></summary>
+    <p data-l="kk">Жоқ, міндетті емес. Ол тек түймелердің дыбысы мен дірілі үшін керек. Пернетақта бұл рұқсатсыз да толық жұмыс істейді.</p><p data-l="ru">Нет, это необязательно. Он нужен только для звука нажатий и вибрации. Клавиатура полностью работает и без него.</p><p data-l="en">No, it’s optional. It is used only for key sounds and vibration. The keyboard works fully without it.</p>
+  </details>
+  <details>
+    <summary><span data-l="kk">Қате түзетсе ше?</span><span data-l="ru">А если исправит неверно?</span><span data-l="en">What if it corrects a word wrongly?</span></summary>
+    <p data-l="kk">Растаған сөздеріңіз жеке сөздікте (тек телефоныңызда) сақталады — пернетақта оларды енді түзетпейді. Қате түзету кездессе, бізге жазыңыз: теріп жазған сөзіңіз бен нәтижесін көрсетсеңіз жеткілікті.</p><p data-l="ru">Подтверждённые вами слова сохраняются в личном словаре (только на телефоне) — клавиатура больше их не исправляет. Если встретите неверное исправление, напишите нам: достаточно набранного слова и того, во что оно превратилось.</p><p data-l="en">Words you confirm are saved to a personal dictionary (on your phone only) and are no longer corrected. If you spot a wrong correction, write to us — the word you typed and what it became is all we need.</p>
+  </details>
+  <details>
+    <summary><span data-l="kk">Android нұсқасы бар ма?</span><span data-l="ru">Есть ли версия для Android?</span><span data-l="en">Is there an Android version?</span></summary>
+    <p data-l="kk">Android нұсқасы сынақта — жақында Google Play-де шығады.</p><p data-l="ru">Версия для Android на тестировании — скоро в Google Play.</p><p data-l="en">The Android version is in testing — coming soon to Google Play.</p>
+  </details>
+</section>
+
+<!-- ═════ ПОДДЕРЖКА ═════ -->
+<section id="support">
+  <div class="band">
+    <h2 data-l="kk">Жобаны қолдаңыз</h2><h2 data-l="ru">Поддержите проект</h2><h2 data-l="en">Support the project</h2>
+    <p data-l="kk">Біз — Алматыдағы шағын команда. Пернетақта тегін болып қала береді, ал қолдау қазақ сөздігін толықтыруға, түзетуді жақсартуға, Android нұсқасына, серверге, Mac және Windows нұсқаларына жұмсалады.</p><p data-l="ru">Мы — небольшая команда из Алматы. Клавиатура останется бесплатной, а поддержка пойдёт на пополнение казахского словаря, улучшение исправлений, версию для Android, сервер, версии для Mac и Windows.</p><p data-l="en">We are a small team from Almaty. The keyboard will stay free, and your support goes to growing the Kazakh dictionary, improving corrections, the Android version, servers, and Mac and Windows versions.</p>
     <p>
-      Компания основана в Алматы и занимается прикладной обработкой естественного языка.
-      Основное направление — казахский язык: орфография, морфология, исправление опечаток
-      и смешанный казахско-русский ввод, с которым ежедневно сталкивается любой житель
-      Казахстана.
+      <a class="btn light" href="qoldau/"><span data-l="kk">Sözim-ді қолдау</span><span data-l="ru">Поддержать Sözim</span><span data-l="en">Support Sözim</span></a>
+      <a class="btn line-light" href="https://apps.apple.com/app/id6793591152?action=write-review"><span data-l="kk">App Store-да баға қою</span><span data-l="ru">Оценить в App Store</span><span data-l="en">Rate on the App Store</span></a>
+      <a class="btn line-light" href="https://www.threads.net/@sozim_keyboard">Threads</a>
     </p>
-    <p>
-      Мы разрабатываем собственные языковые модели и словарные ресурсы, а также
-      программные продукты на их основе.
-    </p>
-  </section>
+    <p data-l="kk">Ең үлкен көмек — Sözim туралы досыңызға айту және App Store-да баға қою ❤️</p><p data-l="ru">Самая большая помощь — рассказать о Sözim друзьям и поставить оценку в App Store ❤️</p><p data-l="en">The biggest help of all: tell a friend about Sözim and leave a rating on the App Store ❤️</p>
+  </div>
+</section>
 
-  <section id="products">
-    <h2>Продукты</h2>
-
-    <div class="card">
-      <h3>Sözim Keyboard — клавиатура для iOS</h3>
-      <p>
-        Клавиатура для казахского и русского языков с исправлением опечаток,
-        восстановлением специальных букв (қ, ғ, ң, ө, ұ, ү, і, ә) и поддержкой
-        смешанного ввода. Работает полностью на устройстве, без подключения к сети.
-      </p>
+<!-- ═════ КОМПАНИЯ ═════ -->
+<section id="company">
+  <h2 data-l="kk">Компания</h2><h2 data-l="ru">Компания</h2><h2 data-l="en">Company</h2>
+  <div class="cols">
+    <div>
+      <p data-l="kk">«KitonikGroup» ЖШС — Алматыдағы бағдарламалық қамтамасыз ету әзірлеушісі. Біз қазақ және орыс тілдеріне арналған мәтін енгізу және өңдеу құралдарын жасаймыз.</p><p data-l="ru">ТОО «KitonikGroup» — компания по разработке программного обеспечения из Алматы. Мы делаем инструменты ввода и обработки текста для казахского и русского языков.</p><p data-l="en">KitonikGroup LLP is a software company from Almaty. We build text input and processing tools for Kazakh and Russian.</p>
+      <p data-l="kk">Негізгі бағыт — қазақ тілі: емле, морфология, қателерді түзету және қазақша-орысша аралас жазу — Қазақстандағы әркім күн сайын кездестіретін жағдай. Біз өз тілдік модельдеріміз бен сөздік ресурстарымызды жасаймыз және соның негізінде өнімдер шығарамыз.</p><p data-l="ru">Основное направление — казахский язык: орфография, морфология, исправление опечаток и смешанный казахско-русский ввод, с которым ежедневно сталкивается любой житель Казахстана. Мы разрабатываем собственные языковые модели и словарные ресурсы, а также программные продукты на их основе.</p><p data-l="en">Our main focus is the Kazakh language: spelling, morphology, typo correction and mixed Kazakh–Russian input, which everyone in Kazakhstan deals with every day. We develop our own language models and dictionary resources, and build products on top of them.</p>
     </div>
-
-    <div class="card">
-      <h3>Языковые модели</h3>
-      <p>
-        Казахско-русские модели для исправления и предсказания текста. Доступ
-        для организаций предоставляется по лицензии и через программный интерфейс.
-      </p>
-    </div>
-  </section>
-
-  <section id="contacts">
-    <h2>Контакты и реквизиты</h2>
-    <div class="row">
-      <div>
-        <dl>
-          <dt>Полное наименование</dt>
-          <dd>ТОО «KitonikGroup» · KitonikGroup LLP</dd>
-          <dt>БИН</dt>
-          <dd>180240037050</dd>
-          <dt>D-U-N-S</dt>
-          <dd>521175817</dd>
-          <dt>Директор</dt>
-          <dd>Кәрібжан Алмас Бауыржанұлы</dd>
-        </dl>
-      </div>
-      <div>
-        <dl>
-          <dt>Адрес</dt>
-          <dd>050008, Республика Казахстан,<br>г. Алматы, Бостандыкский район,<br>пр. Абая, д. 58А</dd>
-          <dt>Телефон</dt>
-          <dd><a href="tel:+77082543892">+7 708 254 38 92</a></dd>
-          <dt>Электронная почта</dt>
-          <dd><a href="mailto:KitonikGroup@gmail.com">KitonikGroup@gmail.com</a></dd>
-        </dl>
+    <div>
+      <div class="card">
+        <div class="prod"><span class="tag ok"><span data-l="kk">Шықты</span><span data-l="ru">Вышло</span><span data-l="en">Live</span></span><div><strong>Sözim Keyboard</strong> — <span data-l="kk">iOS пернетақтасы</span><span data-l="ru">клавиатура для iOS</span><span data-l="en">keyboard for iOS</span></div></div>
+        <div class="prod" style="margin-top:12px"><span class="tag"><span data-l="kk">Сынақта</span><span data-l="ru">Тест</span><span data-l="en">Testing</span></span><div><strong>Sözim Keyboard</strong> — <span data-l="kk">Android нұсқасы, жақында Google Play-де</span><span data-l="ru">версия для Android, скоро в Google Play</span><span data-l="en">Android version, coming soon to Google Play</span></div></div>
+        <div class="prod" style="margin-top:12px"><span class="tag"><span data-l="kk">Ұйымдарға</span><span data-l="ru">Организациям</span><span data-l="en">For orgs</span></span><div><strong><span data-l="kk">Тілдік модельдер</span><span data-l="ru">Языковые модели</span><span data-l="en">Language models</span></strong> — <span data-l="kk">қазақша-орысша модельдер лицензия бойынша және бағдарламалық интерфейс (API) арқылы беріледі</span><span data-l="ru">казахско-русские модели для исправления и предсказания текста, доступ по лицензии и через программный интерфейс (API)</span><span data-l="en">Kazakh–Russian models for text correction and prediction, available under licence and through an API</span></div></div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <h3 data-l="kk">Деректемелер мен байланыс</h3><h3 data-l="ru">Контакты и реквизиты</h3><h3 data-l="en">Details and contacts</h3>
+  <div class="cols">
+    <dl>
+      <dt><span data-l="kk">Толық атауы</span><span data-l="ru">Полное наименование</span><span data-l="en">Full name</span></dt><dd><span data-l="kk">«KitonikGroup» ЖШС · KitonikGroup LLP</span><span data-l="ru">ТОО «KitonikGroup» · KitonikGroup LLP</span><span data-l="en">KitonikGroup LLP · ТОО «KitonikGroup»</span></dd>
+      <dt><span data-l="kk">БСН</span><span data-l="ru">БИН</span><span data-l="en">BIN</span></dt><dd>180240037050</dd>
+      <dt>D-U-N-S</dt><dd>521175817</dd>
+      <dt><span data-l="kk">Директор</span><span data-l="ru">Директор</span><span data-l="en">Director</span></dt><dd><span data-l="kk">Кәрібжан Алмас Бауыржанұлы</span><span data-l="ru">Кәрібжан Алмас Бауыржанұлы</span><span data-l="en">Karibzhan Almas Bauyrzhanuly</span></dd>
+    </dl>
+    <dl>
+      <dt><span data-l="kk">Мекенжай</span><span data-l="ru">Адрес</span><span data-l="en">Address</span></dt><dd><span data-l="kk">050008, Қазақстан Республикасы, Алматы қ., Бостандық ауданы, Абай даңғылы, 58А</span><span data-l="ru">050008, Республика Казахстан, г. Алматы, Бостандыкский район, пр. Абая, д. 58А</span><span data-l="en">050008, Republic of Kazakhstan, Almaty, Bostandyk District, 58A Abay Ave.</span></dd>
+      <dt><span data-l="kk">Телефон</span><span data-l="ru">Телефон</span><span data-l="en">Phone</span></dt><dd><a href="tel:+77082543892">+7 708 254 38 92</a></dd>
+      <dt><span data-l="kk">Электрондық пошта</span><span data-l="ru">Электронная почта</span><span data-l="en">Email</span></dt><dd><a href="mailto:KitonikGroup@gmail.com">KitonikGroup@gmail.com</a></dd>
+    </dl>
+  </div>
+</section>
 
 </main>
 
-<footer>
+
+<footer class="site">
   <div class="wrap">
-    © 2026 ТОО «KitonikGroup». Алматы, Казахстан.
+    <div class="fl">
+      <a href="index.html">kitonik.kz</a>
+      <a href="qoldau/"><span data-l="kk">Sözim-ді қолдау</span><span data-l="ru">Поддержать Sözim</span><span data-l="en">Support Sözim</span></a>
+      <a href="privacy.html"><span data-l="kk">Құпиялылық саясаты</span><span data-l="ru">Конфиденциальность</span><span data-l="en">Privacy policy</span></a>
+      <a href="support.html"><span data-l="kk">Қолдау қызметі</span><span data-l="ru">Поддержка</span><span data-l="en">Help &amp; contact</span></a>
+      <a href="https://apps.apple.com/app/id6793591152">App Store</a>
+      <a href="https://www.threads.net/@sozim_keyboard">Threads</a>
+    </div>
+    <div><span data-l="kk">© 2026 «KitonikGroup» ЖШС. Алматы, Қазақстан.</span><span data-l="ru">© 2026 ТОО «KitonikGroup». Алматы, Казахстан.</span><span data-l="en">© 2026 KitonikGroup LLP. Almaty, Kazakhstan.</span></div>
   </div>
 </footer>
 
+<script src="assets/site.js"></script>
 </body>
 </html>

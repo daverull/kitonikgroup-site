@@ -1,68 +1,33 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="kk" data-def="kk" data-t-kk="Sözim-ді қолдау · Поддержать Sözim · Support Sözim" data-t-ru="Поддержать Sözim · Sözim-ді қолдау · Support Sözim" data-t-en="Support Sözim · Sözim-ді қолдау · Поддержать Sözim" data-d-kk="Sözim — қазақ және орыс тілдерінің пернетақтасы. Жобаны қолдау." data-d-ru="Sözim — клавиатура для казахского и русского языков. Поддержать проект." data-d-en="Sözim — a keyboard for Kazakh and Russian. Support the project.">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sözim-ді қолдау · Поддержать Sözim</title>
-<meta name="description" content="Sözim — қазақ және орыс тілдерінің пернетақтасы. Жобаны қолдау · Поддержать проект.">
-<style>
-  :root{
-    --bg:#ffffff; --fg:#16181d; --muted:#5c6370;
-    --line:#e4e7ec; --accent:#00786f; --soft:#f6f8f9;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#14161a; --fg:#e9ecf1; --muted:#9aa3b0;
-           --line:#272b32; --accent:#4fd1c5; --soft:#1b1e24; }
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0; background:var(--bg); color:var(--fg);
-    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-  header{border-bottom:1px solid var(--line);padding:22px 0}
-  .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .brand{font-size:20px;font-weight:700;letter-spacing:-.01em}
-  .brand span{color:var(--accent)}
-  .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--soft)}
-  .lang button{border:0;background:transparent;color:var(--muted);font:600 13px/1 inherit;padding:8px 14px;border-radius:999px;cursor:pointer}
-  .lang button.on{background:var(--accent);color:#fff}
-  h1{font-size:32px;line-height:1.25;letter-spacing:-.02em;margin:40px 0 14px}
-  h2{font-size:21px;margin:40px 0 12px;letter-spacing:-.01em}
-  p{margin:0 0 14px}
-  .lead{font-size:18px;color:var(--muted);margin-bottom:24px}
-  ul{margin:0 0 14px;padding-left:22px}
-  li{margin:4px 0}
-  .card{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0}
-  .card h3{margin:0 0 8px;font-size:17px}
-  .qr{display:block;width:100%;max-width:280px;height:auto;margin:8px auto 4px;border-radius:12px;background:#fff;padding:8px}
-  .center{text-align:center;color:var(--muted);font-size:14px}
-  dl{margin:0}
-  dt{color:var(--muted);font-size:14px;margin-top:12px}
-  dd{margin:2px 0 0;font-variant-numeric:tabular-nums;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  .iban{word-break:break-all}
-  .copy{border:1px solid var(--line);background:var(--bg);color:var(--accent);border-radius:8px;font:600 12px/1 inherit;padding:6px 10px;cursor:pointer}
-  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border-radius:10px;padding:12px 18px;margin:4px 8px 4px 0}
-  a{color:var(--accent)}
-  footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0 48px;color:var(--muted);font-size:14px}
-  [data-l]{display:none}
-  html[lang="kk"] [data-l="kk"], html[lang="ru"] [data-l="ru"]{display:revert}
-</style>
+<title>Sözim-ді қолдау · Поддержать Sözim · Support Sözim</title>
+<meta name="description" content="Sözim — қазақ және орыс тілдерінің пернетақтасы. Жобаны қолдау.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Sözim-ді қолдау · Поддержать Sözim · Support Sözim">
+<meta property="og:description" content="Sözim — қазақ және орыс тілдерінің пернетақтасы. Жобаны қолдау.">
+<meta property="og:image" content="https://kitonik.kz/assets/icon.jpg">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 
-<header>
+<header class="site">
   <div class="wrap top">
-    <div class="brand">Sözim<span> · KitonikGroup</span></div>
-    <div class="lang" role="group" aria-label="Тіл · Язык">
-      <button type="button" id="b-kk" onclick="setLang('kk')">ҚАЗ</button>
-      <button type="button" id="b-ru" onclick="setLang('ru')">РУС</button>
+    <a class="brand" href="../index.html"><img src="../assets/icon-96.png" width="36" height="36" alt=""><div>Sözim<span> · KitonikGroup</span></div></a>
+    <div class="lang" role="group" aria-label="Тіл · Язык · Language">
+      <button type="button" data-lang="kk">ҚАЗ</button>
+      <button type="button" data-lang="ru">РУС</button>
+      <button type="button" data-lang="en">ENG</button>
     </div>
+    <nav class="main" aria-label="Menu"><a href="../index.html#how"><span data-l="kk">Қалай жұмыс істейді</span><span data-l="ru">Как это работает</span><span data-l="en">How it works</span></a><a href="../index.html#features"><span data-l="kk">Мүмкіндіктер</span><span data-l="ru">Возможности</span><span data-l="en">Features</span></a><a href="../index.html#company"><span data-l="kk">Компания</span><span data-l="ru">Компания</span><span data-l="en">Company</span></a><a href="../qoldau/" class="pill"><span data-l="kk">Қолдау</span><span data-l="ru">Поддержать</span><span data-l="en">Support us</span></a></nav>
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap narrow">
 
 <!-- ═════════ ҚАЗАҚША ═════════ -->
 <div data-l="kk">
@@ -87,17 +52,17 @@
   <h2>Қалай қолдауға болады</h2>
   <div class="card">
     <h3>Kaspi арқылы</h3>
-    <img class="qr" src="kaspi-qr.png" alt="Kaspi QR — KitonikGroup">
+    <img class="qr" src="kaspi-qr.png" width="280" height="280" alt="Kaspi QR — KitonikGroup">
     <p class="center">Kaspi қосымшасында QR кодты сканерлеңіз</p>
   </div>
   <div class="card">
     <h3>Деректемелер бойынша аударым</h3>
     <dl>
       <dt>Компания</dt><dd>«KITONIKGROUP» ЖШС</dd>
-      <dt>БСН</dt><dd><span>180240037050</span><button class="copy" data-c="180240037050">Көшіру</button></dd>
+      <dt>БСН</dt><dd class="flex"><span>180240037050</span><button class="copy" data-c="180240037050"><span data-l="kk">Көшіру</span><span data-l="ru">Копировать</span><span data-l="en">Copy</span><span class="ok">✓</span></button></dd>
       <dt>Банк</dt><dd>«Kaspi Bank» АҚ</dd>
       <dt>БСК</dt><dd>CASPKZKA</dd>
-      <dt>Шот нөмірі (IBAN)</dt><dd><span class="iban">KZ80722S000008896891</span><button class="copy" data-c="KZ80722S000008896891">Көшіру</button></dd>
+      <dt>Шот нөмірі (IBAN)</dt><dd class="flex"><span class="iban">KZ80722S000008896891</span><button class="copy" data-c="KZ80722S000008896891"><span data-l="kk">Көшіру</span><span data-l="ru">Копировать</span><span data-l="en">Copy</span><span class="ok">✓</span></button></dd>
       <dt>Кбе</dt><dd>17</dd>
       <dt>Мекенжай</dt><dd>Алматы қ., Бостандық ауданы, Абай даңғылы, 58А</dd>
     </dl>
@@ -111,7 +76,7 @@
   <p>Sözim туралы досыңызға айтыңыз және App Store-да баға қойыңыз ❤️</p>
   <p>
     <a class="btn" href="https://apps.apple.com/app/id6793591152?action=write-review">App Store-да баға қою</a>
-    <a class="btn" href="https://www.threads.net/@sozim_keyboard">Threads: @sozim_keyboard</a>
+    <a class="btn ghost" href="https://www.threads.net/@sozim_keyboard">Threads: @sozim_keyboard</a>
   </p>
 </div>
 
@@ -138,17 +103,17 @@
   <h2>Как поддержать</h2>
   <div class="card">
     <h3>Через Kaspi</h3>
-    <img class="qr" src="kaspi-qr.png" alt="Kaspi QR — KitonikGroup">
+    <img class="qr" src="kaspi-qr.png" width="280" height="280" alt="Kaspi QR — KitonikGroup">
     <p class="center">Отсканируйте QR-код в приложении Kaspi</p>
   </div>
   <div class="card">
     <h3>Перевод по реквизитам</h3>
     <dl>
       <dt>Компания</dt><dd>ТОО «KITONIKGROUP»</dd>
-      <dt>БИН</dt><dd><span>180240037050</span><button class="copy" data-c="180240037050">Копировать</button></dd>
+      <dt>БИН</dt><dd class="flex"><span>180240037050</span><button class="copy" data-c="180240037050"><span data-l="kk">Көшіру</span><span data-l="ru">Копировать</span><span data-l="en">Copy</span><span class="ok">✓</span></button></dd>
       <dt>Банк</dt><dd>АО «Kaspi Bank»</dd>
       <dt>БИК</dt><dd>CASPKZKA</dd>
-      <dt>Номер счёта (IBAN)</dt><dd><span class="iban">KZ80722S000008896891</span><button class="copy" data-c="KZ80722S000008896891">Копировать</button></dd>
+      <dt>Номер счёта (IBAN)</dt><dd class="flex"><span class="iban">KZ80722S000008896891</span><button class="copy" data-c="KZ80722S000008896891"><span data-l="kk">Көшіру</span><span data-l="ru">Копировать</span><span data-l="en">Copy</span><span class="ok">✓</span></button></dd>
       <dt>КБе</dt><dd>17</dd>
       <dt>Адрес</dt><dd>г. Алматы, Бостандыкский район, пр. Абая, 58А</dd>
     </dl>
@@ -162,37 +127,78 @@
   <p>Расскажите о Sözim друзьям и поставьте оценку в App Store ❤️</p>
   <p>
     <a class="btn" href="https://apps.apple.com/app/id6793591152?action=write-review">Оценить в App Store</a>
-    <a class="btn" href="https://www.threads.net/@sozim_keyboard">Threads: @sozim_keyboard</a>
+    <a class="btn ghost" href="https://www.threads.net/@sozim_keyboard">Threads: @sozim_keyboard</a>
+  </p>
+</div>
+
+<!-- ═════════ ENGLISH ═════════ -->
+<div data-l="en">
+  <h1>Support Sözim</h1>
+  <p class="lead">Sözim is a keyboard for Kazakh and Russian. We are a small team from Almaty, KitonikGroup LLP. The iPhone keyboard is free and will stay free.</p>
+
+  <h2>What’s done so far</h2>
+  <ul>
+    <li>Released on the App Store on 8 November 2026; update 1.0.1 followed.</li>
+    <li>The Android version is in testing — coming soon to Google Play.</li>
+    <li>The keyboard corrects typos in Kazakh and Russian and suggests the next word.</li>
+  </ul>
+
+  <h2>Where the money goes</h2>
+  <ul>
+    <li>Growing the Kazakh dictionary and improving corrections</li>
+    <li>The Android version</li>
+    <li>Servers</li>
+    <li>Mac and Windows versions</li>
+  </ul>
+
+  <h2>How to support</h2>
+  <div class="card">
+    <h3>Via Kaspi</h3>
+    <img class="qr" src="kaspi-qr.png" width="280" height="280" alt="Kaspi QR — KitonikGroup">
+    <p class="center">Scan the QR code in the Kaspi app</p>
+  </div>
+  <div class="card">
+    <h3>Bank transfer</h3>
+    <dl>
+      <dt>Company</dt><dd>KITONIKGROUP LLP</dd>
+      <dt>BIN</dt><dd class="flex"><span>180240037050</span><button class="copy" data-c="180240037050"><span data-l="kk">Көшіру</span><span data-l="ru">Копировать</span><span data-l="en">Copy</span><span class="ok">✓</span></button></dd>
+      <dt>Bank</dt><dd>Kaspi Bank JSC</dd>
+      <dt>BIC (SWIFT)</dt><dd>CASPKZKA</dd>
+      <dt>Account number (IBAN)</dt><dd class="flex"><span class="iban">KZ80722S000008896891</span><button class="copy" data-c="KZ80722S000008896891"><span data-l="kk">Көшіру</span><span data-l="ru">Копировать</span><span data-l="en">Copy</span><span class="ok">✓</span></button></dd>
+      <dt>KBe (beneficiary code)</dt><dd>17</dd>
+      <dt>Address</dt><dd>58A Abay Ave., Bostandyk District, Almaty</dd>
+    </dl>
+  </div>
+  <p>Transfers go to the account of KitonikGroup LLP and are spent on developing Sözim. We publish a spending report on this page every quarter.</p>
+
+  <h2>For companies</h2>
+  <p>If you would like to support the project as a company, there are three partnership formats: “Platform Partner”, “Dictionary Partner” and “Friend of the Project”. Write to us: <a href="mailto:KitonikGroup@gmail.com">KitonikGroup@gmail.com</a></p>
+
+  <h2>The biggest help</h2>
+  <p>Tell your friends about Sözim and leave a rating on the App Store ❤️</p>
+  <p>
+    <a class="btn" href="https://apps.apple.com/app/id6793591152?action=write-review">Rate on the App Store</a>
+    <a class="btn ghost" href="https://www.threads.net/@sozim_keyboard">Threads: @sozim_keyboard</a>
   </p>
 </div>
 
 </main>
 
-<footer>
-  <div class="wrap">© 2026 KitonikGroup · <a href="/">kitonik.kz</a></div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl">
+      <a href="../index.html">kitonik.kz</a>
+      <a href="../qoldau/"><span data-l="kk">Sözim-ді қолдау</span><span data-l="ru">Поддержать Sözim</span><span data-l="en">Support Sözim</span></a>
+      <a href="../privacy.html"><span data-l="kk">Құпиялылық саясаты</span><span data-l="ru">Конфиденциальность</span><span data-l="en">Privacy policy</span></a>
+      <a href="../support.html"><span data-l="kk">Қолдау қызметі</span><span data-l="ru">Поддержка</span><span data-l="en">Help &amp; contact</span></a>
+      <a href="https://apps.apple.com/app/id6793591152">App Store</a>
+      <a href="https://www.threads.net/@sozim_keyboard">Threads</a>
+    </div>
+    <div><span data-l="kk">© 2026 «KitonikGroup» ЖШС. Алматы, Қазақстан.</span><span data-l="ru">© 2026 ТОО «KitonikGroup». Алматы, Казахстан.</span><span data-l="en">© 2026 KitonikGroup LLP. Almaty, Kazakhstan.</span></div>
+  </div>
 </footer>
 
-<script>
-  function setLang(l){
-    document.documentElement.lang = l;
-    document.getElementById('b-kk').className = l === 'kk' ? 'on' : '';
-    document.getElementById('b-ru').className = l === 'ru' ? 'on' : '';
-    try { localStorage.setItem('sozim.lang', l); } catch (e) {}
-  }
-  (function(){
-    var q = (location.search.match(/[?&]lang=(kk|ru)/) || [])[1];
-    var s = null; try { s = localStorage.getItem('sozim.lang'); } catch (e) {}
-    setLang(q || s || 'kk');
-  })();
-  document.querySelectorAll('.copy').forEach(function(b){
-    b.addEventListener('click', function(){
-      var t = b.textContent;
-      (navigator.clipboard ? navigator.clipboard.writeText(b.dataset.c) : Promise.reject()).then(function(){
-        b.textContent = document.documentElement.lang === 'kk' ? 'Көшірілді ✓' : 'Скопировано ✓';
-        setTimeout(function(){ b.textContent = t; }, 1500);
-      }, function(){});
-    });
-  });
-</script>
+<script src="../assets/site.js"></script>
 </body>
 </html>
